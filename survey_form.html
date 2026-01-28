@@ -7,55 +7,53 @@
     </head>
     <body>
         <header>
-            <h>Survey Form</h1>
+            <h1>Survey Form</h1>
         </header>
-        <main>
-            <form>
-                <label for="full_name">Full Name:</label>
-                <input type="text" id="full_name" name="full_name" required><br><br>
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required><br><br>
+        <form>
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required><br><br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
 
-                <div class="radio-group">
-                    <label>How satisfied are you with our service?</label><br>
-                    <input type="radio" id="very_satisfied" name="satisfaction" value="very_satisfied">
-                    <label for="very_satisfied">Very Satisfied</label><br>
-                    <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
-                    <label for="satisfied">Satisfied</label><br>
-                    <input type="radio" id="neutral" name="satisfaction" value="neutral">
-                    <label for="neutral">Neutral</label><br>
-                    <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
-                    <label for="dissatisfied">Dissatisfied</label><br>
-                    <input type="radio" id="very_dissatisfied" name="satisfaction" value="very_dissatisfied">
-                    <label for="very_dissatisfied">Very Dissatisfied</label><br><br>
-                </div>
+            <fieldset>
+                <legend>How satisfied are you with our service?</legend><br>
+                <input type="radio" id="very_satisfied" name="satisfaction" value="very_satisfied">
+                <label for="very_satisfied">Very Satisfied</label><br>
+                <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+                <label for="satisfied">Satisfied</label><br>
+                <input type="radio" id="neutral" name="satisfaction" value="neutral">
+                <label for="neutral">Neutral</label><br>
+                <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+                <label for="dissatisfied">Dissatisfied</label><br>
+                <input type="radio" id="very_dissatisfied" name="satisfaction" value="very_dissatisfied">
+                <label for="very_dissatisfied">Very Dissatisfied</label><br><br>
+            </fieldset>
 
-                <div class="checkbox-group">
-                    <label>What feature do you value most?</label><br>
-                    <input type="checkbox" id="ease_of_use" name="ease_of_use" value="ease_of_use">
-                    <label for="ease_of_use">Ease of Use</label><br>
-                    <input type="checkbox" id="design" name="design" value="design">
-                    <label for="design">Design</label><br>
-                    <input type="checkbox" id="customer_support" name="customer_support" value="customer_support">
-                    <label for="customer_support">Customer Support</label><br><br>
-                </div>
-                <div class="dropdown">
-                    <label for="description">What best describes you?</label>
-                    <select name="description" id="description">
-                        <option value="student">Student</option>
-                        <option value="professionals">Professional</option>
-                        <option value="hobbyist">Hobbyist</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <br><br>
-                <div class="feedback">
-                    <label for="feedback">Additional feedback:</label><br>
-                    <textarea id="feedback" name="feedback"></textarea>
-                </div>
-                <br><br>
-                <button type="submit">Submit</button>
-            </form>
-        </main>
+            <fieldset>
+                <legend>What feature do you value most?</legend><br>
+                <input type="checkbox" id="ease_of_use" name="ease_of_use" value="ease_of_use">
+                <label for="ease_of_use">Ease of Use</label><br>
+                <input type="checkbox" id="design" name="design" value="design">
+                <label for="design">Design</label><br>
+                <input type="checkbox" id="customer_support" name="customer_support" value="customer_support">
+                <label for="customer_support">Customer Support</label><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>What best describes you?</legend>
+                <select name="description" id="description">
+                    <option value="student">Student</option>
+                    <option value="professionals">Professional</option>
+                    <option value="hobbyist">Hobbyist</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+            <br><br>
+            <div class="feedback">
+                <label for="feedback">Additional feedback:</label><br>
+                <textarea id="feedback" name="feedback"></textarea>
+            </div>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
     </body>
 </html>
