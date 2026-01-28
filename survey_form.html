@@ -7,15 +7,15 @@
     </head>
     <body>
         <header>
-            <h1>Survey Form</h1>
+            <h>Survey Form</h1>
         </header>
         <main>
             <form>
                 <label for="full_name">Full Name:</label>
-                <input type="text" id="full_name" name="full_name">
+                <input type="text" id="full_name" name="full_name" required><br><br>
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email">
-    
+                <input type="email" id="email" name="email" required><br><br>
+
                 <div class="radio-group">
                     <label>How satisfied are you with our service?</label><br>
                     <input type="radio" id="very_satisfied" name="satisfaction" value="very_satisfied">
@@ -29,7 +29,7 @@
                     <input type="radio" id="very_dissatisfied" name="satisfaction" value="very_dissatisfied">
                     <label for="very_dissatisfied">Very Dissatisfied</label><br><br>
                 </div>
-    
+
                 <div class="checkbox-group">
                     <label>What feature do you value most?</label><br>
                     <input type="checkbox" id="ease_of_use" name="ease_of_use" value="ease_of_use">
@@ -48,10 +48,12 @@
                         <option value="other">Other</option>
                     </select>
                 </div>
+                <br><br>
                 <div class="feedback">
-                    <label for="feedback">Additional feedback:</label>
+                    <label for="feedback">Additional feedback:</label><br>
                     <textarea id="feedback" name="feedback"></textarea>
                 </div>
+                <br><br>
                 <button type="submit">Submit</button>
             </form>
         </main>
